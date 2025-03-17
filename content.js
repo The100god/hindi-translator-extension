@@ -12,7 +12,7 @@ document.addEventListener("mouseup", () => {
             showPopup(response.translatedText);
           }
         });
-      }, 100);  // Slight delay before sending the message
+      }, 2000);  // Slight delay before sending the message
     
   });
   
