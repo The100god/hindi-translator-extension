@@ -69,3 +69,4 @@ This project is open-source and free to use.
 Developed by **Saurabh Goyal**.
 
 Contact info: https\://saurabh-goyal.netlify.app/
+GitHub: https://github.com/The100god/hindi-translator-extension
