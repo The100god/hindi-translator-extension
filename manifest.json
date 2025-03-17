@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Hindi Translator Popup",
+  "version": "1.0",
+  "description": "Translates selected text into Hindi and displays it in a popup.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://translate.googleapis.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "hindi_logo.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": "hindi_logo.png"
+  }
+}
